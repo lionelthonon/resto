@@ -22,12 +22,12 @@ Route::get('/about', ['as'=>'about',
 Route::get('/register', ['as'=>'register',
                          'uses'=>'UsersController@register']);
 
-Route::post('/store', ['as'=>'store',
-                       'uses'=>'UsersController@store']);
+/*Route::post('/store', ['as'=>'store',
+                       'uses'=>'UsersController@store']);*/
 
 /* --- Se connecter au site --- */
 Route::get('/login', ['as'=>'login',
                       'uses'=>'AuthController@login']);
 
-Route::post('/doLogin', ['as'=>'login',
-                         'uses'=>'AuthController@doLogin']);
+/*Route::post('/doLogin', ['as'=>'login',
+                         'uses'=>'AuthController@doLogin']);*/

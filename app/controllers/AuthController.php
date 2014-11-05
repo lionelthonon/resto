@@ -9,13 +9,13 @@
 class AuthController extends BaseController{
     public function login() {
         /* --- Page du formulaire de login --- */
-        return View::make(pages.login);
+        return View::make('pages.home');
     }
 
     public function doLogin() {
         /* --- Connexion --- */
 
         /* --- Vérification de la connexion --- */
-        return Redirect::intended('home');
+        return View::make('home');
     }
 } 
