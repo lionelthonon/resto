@@ -24,3 +24,10 @@ Route::get('/register', ['as'=>'register',
 
 Route::post('/store', ['as'=>'store',
                        'uses'=>'UsersController@store']);
+
+/* --- Se connecter au site --- */
+Route::get('/login', ['as'=>'login',
+                      'uses'=>'AuthController@login']);
+
+Route::post('/doLogin', ['as'=>'login',
+                         'uses'=>'AuthController@doLogin']);
